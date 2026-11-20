@@ -19,12 +19,13 @@ footer{max-width:760px;margin:0 auto;padding:20px;border-top:1px solid var(--lin
 <h2>2. Data we access</h2>
 <p>When a channel is connected, ShortsCutter requests these Google permissions:</p>
 <ul><li><b>youtube.upload</b>: to upload approved videos and set their thumbnails.</li>
-<li><b>youtube.readonly</b>: only to read the connected channel's ID and name, so the right channel is shown in the app.</li></ul>
-<p>ShortsCutter does not read comments, analytics, subscribers, other users' data or any other YouTube data.</p>
+<li><b>youtube.readonly</b>: to read the connected channel's ID and name, so the right channel is shown in the app, and the public statistics (views, likes, comments) of videos uploaded with ShortsCutter.</li>
+<li><b>yt-analytics.readonly</b>: to read the average view duration of those same videos.</li></ul>
+<p>ShortsCutter does not read comments' content, subscribers, other channels, other users' data or any other YouTube data.</p>
 <h2>3. How data is used</h2>
-<p>The data is used only to upload videos that were approved by hand to the connected channel, with the title, description, tags and scheduled publish time chosen in the app.</p>
+<p>The data is used only to upload videos that were approved by hand to the connected channel, with the title, description, tags and scheduled publish time chosen in the app, and to show the creator how his own videos perform so he can choose better topics for the next ones.</p>
 <h2>4. Storage</h2>
-<p>ShortsCutter stores on the local computer only: the OAuth refresh token, the connected channel's ID and name, and the IDs of uploaded videos. Nothing is stored on any server. No data is sold, shared with third parties or used for advertising. ShortsCutter has no analytics and no cookies.</p>
+<p>ShortsCutter stores on the local computer only: the OAuth refresh token, the connected channel's ID and name, the IDs of uploaded videos and their statistics. Nothing is stored on any server. No data is sold, shared with third parties or used for advertising. ShortsCutter has no analytics and no cookies.</p>
 <h2>5. Deleting data and revoking access</h2>
 <ul><li>In ShortsCutter: open the channel settings and click "Disconnect channel". This revokes the token at Google and deletes it from the computer.</li>
 <li>In your Google account: you can revoke ShortsCutter's access at any time at <a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a>.</li></ul>
